@@ -1,6 +1,6 @@
 # Gender Bias in Online Discussions: Analyzing Sentiment and Text Complexity
 
-Authors: Andri Rutschmann, Peer Saleth and Jördis Strack
+Authors: [Andri Rutschmann](https://github.com/rutschmanna), [Peer Saleth](https://github.com/peersal) and [Jördis Strack](https://github.com/joerdisstrack)
 
 The main repository to document all development and results of our final project for the seminar Research Projects in Computational Studies of Social Phenomena 
 
