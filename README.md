@@ -29,6 +29,7 @@ The following tools and measures and applied:
 
 Add quick info text here :)
 
+A comparison between the sentiment mapping by Buechel & Hand (2017) and our LEIA-mapping:
 <p align="center">
   <img src="./code/figures/3d_vad_inspiration.png" alt="Figure from Buechel & Hahn (2017) showing Ekman’s six basic emotions" width="300"/>
   <img src="./code/figures/3d_vad_recreation.png" alt="Mapping of LEIA-sentiments to VAD-dimensions" width="300"/>
@@ -44,6 +45,7 @@ Add images here :)
 
 Frantz et al. (2015) define text complexity as the challenge involved in understanding a text, encompassing both syntactic and semantic aspects. This is assessed using the Gunning Fog index, which measures sentence complexity and vocabulary difficulty, and the type token ratio (TTR), which reflects vocabulary diversity. Higher Gunning Fog scores, found in subreddits like Republican and Feminisms, indicate more complex texts, while lower scores, such as those in Q434706, suggest simpler texts. TTR analysis shows that subreddits like Socialism and USPolitics use a wider range of vocabulary compared to subreddits like Republican and TwoXChromosomes. Additionally, profanity analysis using the better_profanity library reveals that subreddits such as MensRights and Teenagers have higher incidences of swear words, suggesting more offensive language compared to others like Q434706 and TwoXChromosomes, which have lower profanity rates.
 
+An overview over the mean text complexity scores over all sampled subreddits:
 <p align="center">
   <img src="./code/figures/Gunning_Fog_Subreddit.png" alt="Mean Gunning Fog score over all sampled subreddits" width="300"/>
   <img src="./code/figures/TTR_Subreddit.png" alt="Mean type token ratio over all sampled subreddits " width="300"/>
