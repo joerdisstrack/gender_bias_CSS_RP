@@ -22,6 +22,8 @@ All data needed to replicate our project can be found [here](https://drive.proto
 ## Project Overview
 This project explores how gender bias manifests in the complexity of language used in Reddit posts discussing U.S. politicians. Building on prior research, we sought to understand if and how gender-biased language—measured through sentiment analysis and toxicity—correlates with the syntactic and semantic complexity of text. Our analysis was conducted on a dataset of approximately 137,000 Reddit posts, where we employed the LEIA VAD sentiment analyzer and the Perspective API to quantify emotional tone and toxicity. Contrary to our expectations, we found no substantial evidence that gender-biased or toxic posts are associated with lower text complexity.
 
+**Data:**
+The dataset we used stems from Marjanovic et al. (2022) and focuses on quantifying gender biases towards politicians on Reddit. Originally containing over 10 million posts, a random sample of approximately 137,000 posts was used due to computational limitations.
 ## Methodology
 The following tools and measures and applied:
 
