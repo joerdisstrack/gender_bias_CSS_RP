@@ -24,6 +24,10 @@ This project explores how gender bias manifests in the complexity of language us
 
 **Data:**
 The dataset we used stems from Marjanovic et al. (2022) and focuses on quantifying gender biases towards politicians on Reddit. Originally containing over 10 million posts, a random sample of approximately 137,000 posts was used due to computational limitations.
+
+Marjanovic, S., Stánczak, K., & Augenstein, I. (2022). Quantifying gender biases towards politicians on Reddit (N. J. Shook, Ed.). PLOS ONE, 17 (10), e0274317.
+https://doi.org/10.1371/journal.pone.0274317
+
 ## Methodology
 The following tools and measures and applied:
 
@@ -37,6 +41,8 @@ A comparison between the sentiment mapping by Buechel & Hand (2017) and our LEIA
   <img src="./code/figures/3d_vad_recreation.png" alt="Mapping of LEIA-sentiments to VAD-dimensions" width="300"/>
 </p>
 
+Figure from: Sven, B., & Hahn, U. (2016). Emotion Analysis as a Regression Problem — Dimensional Models and Their Implications on Emotion Representation and Metrical Evaluation, 1114–1122. https://doi.org/doi:10.3233/978-1-61499-672-9-1114
+
 **Toxicity Assessment:** Perspective API to measure the likelihood of a post being perceived as toxic.
 
 The toxicity analysis, using the Perspective API, identified toxic comments with a probability score, showing strong performance metrics: 88% accuracy, 0.875 F1 Score, and 0.913 precision. The analysis found no substantial difference in mean toxicity scores between comments directed at males (0.23, 95% CI [0.23, 0.23]) and females (0.22, 95% CI [0.22, 0.22]), with a mean difference of -0.01 (95% CI [-0.01, -0.01]). Although the Mann-Whitney U Test (U = 1,105,051,493.0, p = 1.37e-11) indicated a significant difference in toxicity score distributions, the effect size was minimal. These findings suggest no significant evidence of accumulated hostile sexism towards women in the dataset. Additionally, toxic comments were slightly more common in comments targeting men, especially when considering the ratio of toxic to total comments.
@@ -45,7 +51,7 @@ Add images here :)
 
 **Text Complexity:** Gunning Fog Index for syntactic complexity and Type-Token Ratio (TTR) for semantic complexity.
 
-Frantz et al. (2015) define text complexity as the challenge involved in understanding a text, encompassing both syntactic and semantic aspects. This is assessed using the Gunning Fog index, which measures sentence complexity and vocabulary difficulty, and the type token ratio (TTR), which reflects vocabulary diversity. Higher Gunning Fog scores, found in subreddits like Republican and Feminisms, indicate more complex texts, while lower scores, such as those in Q434706, suggest simpler texts. TTR analysis shows that subreddits like Socialism and USPolitics use a wider range of vocabulary compared to subreddits like Republican and TwoXChromosomes. Additionally, profanity analysis using the better_profanity library reveals that subreddits such as MensRights and Teenagers have higher incidences of swear words, suggesting more offensive language compared to others like Q434706 and TwoXChromosomes, which have lower profanity rates.
+Text complexity as the challenge involved in understanding a text, encompassing both syntactic and semantic aspects. This is assessed using the Gunning Fog index, which measures sentence complexity and vocabulary difficulty, and the type token ratio (TTR), which reflects vocabulary diversity. Higher Gunning Fog scores, found in subreddits like Republican and Feminisms, indicate more complex texts, while lower scores, such as those in Q434706, suggest simpler texts. TTR analysis shows that subreddits like Socialism and USPolitics use a wider range of vocabulary compared to subreddits like Republican and TwoXChromosomes. Additionally, profanity analysis using the better_profanity library reveals that subreddits such as MensRights and Teenagers have higher incidences of swear words, suggesting more offensive language compared to others like Q434706 and TwoXChromosomes, which have lower profanity rates.
 
 An overview over the mean text complexity scores over all sampled subreddits:
 <p align="center">
@@ -98,3 +104,8 @@ Code should be processed in the following manner:
 5. final_data
 
 The respective data needed is stored in the zip file with matching name.
+
+
+
+
+
