@@ -33,7 +33,7 @@ The following tools and measures and applied:
 
 **Sentiment Analysis:** LEIA VAD sentiment analyzer to evaluate the emotional tone (Valence, Arousal, Dominance).
 
-Add quick info text here :)
+The study of emotions can be approached in two ways: as discrete classes or as clusters in a multidimensional space, typically defined by valence, arousal, and dominance (VAD). Efforts have been made to unify these approaches, with Buechel and Hahn (2017) successfully mapping discrete sentiments to VAD dimensions. To examine gender bias in sentiment, the LEIA sentiment analyzer (Aroyehun et al., 2023) was used, showing strong performance in classifying emotions like anger, though it struggled with sadness. A manual validation showed LEIA’s F1 scores varied, with the best performance in anger and the worst in sadness. The study suggests LEIA is a valuable tool despite some limitations in classifying specific emotions.
 
 A comparison between the sentiment mapping by Buechel & Hand (2017) and our LEIA-mapping:
 <p align="center">
@@ -41,13 +41,22 @@ A comparison between the sentiment mapping by Buechel & Hand (2017) and our LEIA
   <img src="./code/figures/3d_vad_recreation.png" alt="Mapping of LEIA-sentiments to VAD-dimensions" width="300"/>
 </p>
 
+LEIA Sentiment Analyzer: Aroyehun, S., Malik, L., Metzler, H., Haimerl, N., Natale, A., & Garcia, D. (2023). LEIA:
+Linguistic Embeddings for the Identification of Affect. EPJ Data Science, 12. https:
+//doi.org/10.1140/epjds/s13688-023-00427-0
+
 Figure from: Sven, B., & Hahn, U. (2016). Emotion Analysis as a Regression Problem — Dimensional Models and Their Implications on Emotion Representation and Metrical Evaluation, 1114–1122. https://doi.org/doi:10.3233/978-1-61499-672-9-1114
 
 **Toxicity Assessment:** Perspective API to measure the likelihood of a post being perceived as toxic.
 
 The toxicity analysis, using the Perspective API, identified toxic comments with a probability score, showing strong performance metrics: 88% accuracy, 0.875 F1 Score, and 0.913 precision. The analysis found no substantial difference in mean toxicity scores between comments directed at males (0.23, 95% CI [0.23, 0.23]) and females (0.22, 95% CI [0.22, 0.22]), with a mean difference of -0.01 (95% CI [-0.01, -0.01]). Although the Mann-Whitney U Test (U = 1,105,051,493.0, p = 1.37e-11) indicated a significant difference in toxicity score distributions, the effect size was minimal. These findings suggest no significant evidence of accumulated hostile sexism towards women in the dataset. Additionally, toxic comments were slightly more common in comments targeting men, especially when considering the ratio of toxic to total comments.
 
-Add images here :)
+To the left the right-skewed distribution of Reddit posts that were labeled as likely toxic and to the right the distribution of toxix Reddit posts by gender and over all Subbreddits.
+
+<p align="center">
+  <img src="./code/figures/toxicity_distribution.png" alt="Right-skewed distribution of Reddit posts that were labeled as likely toxic" width="300"/>
+  <img src="./code/figures/toxicity_distribution_subreddits.png" alt="Distribution of toxix Reddit posts by gender and over all Subbreddits" width="300"/>
+</p>
 
 **Text Complexity:** Gunning Fog Index for syntactic complexity and Type-Token Ratio (TTR) for semantic complexity.
 
